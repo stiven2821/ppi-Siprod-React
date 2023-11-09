@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import img1Conocenos from "../../public/assets/img/tarjeta1.jpg"
-import img2Conocenos from "../../public/assets/img/asesoria.jpg"
+import img1Conocenos from "/assets/img/tarjeta1.jpg"
+import img2Conocenos from "/assets/img/asesoria.jpg"
 
 const Conocenos = () => {
   return (

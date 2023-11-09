@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <section className="container">
+      <section id="incio" className="container">
         <div
           id="myCarousel"
           className="carousel slide mb-6"

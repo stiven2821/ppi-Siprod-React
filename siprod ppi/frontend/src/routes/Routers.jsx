@@ -3,6 +3,7 @@ import {Routes, Route} from "react-router-dom";
 import Home from "../pages/Home";
 import Noticias from "../pages/Noticias";
 import Conocenos from "../pages/Conocenos"
+import Dashboard from "../pages/Dashboard"
 import Error from "../pages/Error"
 
 const Routers = () => {
@@ -11,6 +12,7 @@ const Routers = () => {
         <Route path="/" element={<Home/>}/>
         <Route path="/Noticias" element={<Noticias/>}/>
         <Route path="/Conocenos" element={<Conocenos/>}/>
+        <Route path="/Dashboard" element={<Dashboard/>}/>
         <Route path="*" element={<Error/>}/>
 
     </Routes>

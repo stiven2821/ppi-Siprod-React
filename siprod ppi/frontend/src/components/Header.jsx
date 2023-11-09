@@ -1,14 +1,15 @@
 import React from "react";
+import { Link ,Element } from "react-scroll";
 import logo from "/assets/img/logoInverso.png";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Login from "./login";
 import Registro from "./Registro";
 
 const Header = () => {
   return (
     <>
-      <Login/>
-      <Registro/>
+      <Login />
+      <Registro />
       <header>
         {/* <!--header--> */}
         <nav
@@ -16,7 +17,7 @@ const Header = () => {
           data-bs-theme="dark"
         >
           <div className="container px-5">
-            <a className="navbar-brand">
+            <a className="navbar-brand" href="">
               <img src={logo} alt="logo" width="70px" />
             </a>
             <button
@@ -39,9 +40,17 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link px-3" href="#miFooter">
+                  <Link
+                    to="miFooter"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    style={{cursor: "pointer"}}
+                    className="nav-link px-3"
+                  >
                     Contacto
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link px-3" to="/Conocenos">
